@@ -1,1 +1,129 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+/* Botão */
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+.btn:hover {
+    background-color: #1B5E20;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    border: 5px solid #4CAF50;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+    background-color: #F5E6CA;
+}
+
+/* Hero */
+#hero {
+    background: url('https://via.placeholder.com/1200x800?text=Campo+Sustentavel') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+/* Cards de Rotas */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.card {
+    background-color: #A5D6A7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 3px solid #4CAF50;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Depoimentos */
+.testimonials p {
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* Resultados */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.stat {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1B5E20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer .social a {
+    color: white;
+    text-decoration: none;
+}
+footer .social a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery img {
+        width: 90%;
+        height: auto;
+    }
+    .stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
